@@ -3,9 +3,11 @@ def best_score(a_dictionary):
     """
     Returns the key with the biggest integer value.
     Args:
-        a_dictionary (dict or None): Dictionary with string keys and integer values.
+        a_dictionary (dict or None): Dictionary with string keys and
+                                     integer values.
     Returns:
-        str or None: Key with highest value, or None if dictionary is None/empty.
+        str or None: Key with highest value, or None if dictionary is
+                     None/empty.
     """
     if not a_dictionary:
         return None
