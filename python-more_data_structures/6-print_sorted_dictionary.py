@@ -2,10 +2,8 @@
 def print_sorted_dictionary(a_dictionary):
     """
     Prints a dictionary by sorted keys (alphabetical order, case-sensitive).
-
     Args:
         a_dictionary (dict): The dictionary to print.
-    
     Note:
         - Only top-level keys are sorted and printed.
         - Keys are assumed to be strings.
