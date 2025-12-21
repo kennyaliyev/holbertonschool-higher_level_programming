@@ -3,7 +3,8 @@
 
 
 class Rectangle:
-    """Represents a rectangle with instance tracking, custom symbol, and comparison.
+    """Represents a rectangle with instance tracking, custom symbol,
+    and comparison.
 
     Attributes:
         number_of_instances (int): Counts active instances.
