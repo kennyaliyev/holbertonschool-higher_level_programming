@@ -4,8 +4,10 @@
 
 class Square:
     """Represents a square with validated size and area method."""
+
     def __init__(self, size=0):
         """Initializes the square with optional size (default: 0).
+
         Args:
             size (int): The size of the square. Must be a non-negative integer.
         Raises:
@@ -17,10 +19,10 @@ class Square:
         if size < 0:
             raise ValueError("size must be >= 0")
         self.__size = size
+
     def area(self):
         """Computes and returns the current area of the square.
 
-        
         Returns:
             int: Area = size * size.
         """
