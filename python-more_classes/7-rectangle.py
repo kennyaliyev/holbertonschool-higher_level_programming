@@ -18,7 +18,7 @@ class Rectangle:
         Args:
             width (int): The width of the rectangle. Default is 0.
             height (int): The height of the rectangle. Default is 0.
-            
+
         Raises:
             TypeError: If width or height is not an integer.
             ValueError: If width or height is negative.
@@ -73,7 +73,8 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return ""
         symbol = self.print_symbol
-        return "\n".join([str(symbol) * self.__width for _ in range(self.__height)])
+        line = str(symbol) * self.__width
+        return "\n".join([line for _ in range(self.__height)])
 
     def __repr__(self):
         """Returns official string representation for eval()."""
