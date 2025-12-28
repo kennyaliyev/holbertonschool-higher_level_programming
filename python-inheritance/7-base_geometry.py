@@ -13,10 +13,10 @@ class BaseGeometry:
         """Validates that value is a positive integer.
 
         Args:
-            name (str): The name of the value (used in error messages).
+            name (str): The name of the value.
             value: The value to validate.
         Raises:
-            TypeError: If value is not an integer.
+            TypeError: If value is not an integer (strict type check).
             ValueError: If value is <= 0.
         """
         if type(value) is not int:
