@@ -23,32 +23,23 @@ class Circle(Shape):
     """Circle subclass of Shape."""
 
     def __init__(self, radius):
-        """Initialize a circle with radius.
-
-        Args:
-            radius (float): The radius of the circle.
-        """
+        """Initialize a circle with radius."""
         self.radius = radius
 
     def area(self):
         """Return the area of the circle."""
-        return math.pi * self.radius ** 2
+        return math.pi * (self.radius ** 2)
 
     def perimeter(self):
         """Return the perimeter (circumference) of the circle."""
-        return 2 * math.pi * self.radius
+        return 2 * math.pi * abs(self.radius)
 
 
 class Rectangle(Shape):
     """Rectangle subclass of Shape."""
 
     def __init__(self, width, height):
-        """Initialize a rectangle with width and height.
-
-        Args:
-            width (float): The width of the rectangle.
-            height (float): The height of the rectangle.
-        """
+        """Initialize a rectangle with width and height."""
         self.width = width
         self.height = height
 
@@ -62,10 +53,6 @@ class Rectangle(Shape):
 
 
 def shape_info(shape):
-    """Print area and perimeter of a shape using duck typing.
-
-    Args:
-        shape: An object expected to have area() and perimeter() methods.
-    """
+    """Print area and perimeter of a shape using duck typing."""
     print(f"Area: {shape.area()}")
     print(f"Perimeter: {shape.perimeter()}")
