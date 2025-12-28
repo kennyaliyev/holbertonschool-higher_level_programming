@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """Square class inheriting from Rectangle."""
 
-
 Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
     """A square class that inherits from Rectangle.
 
-    It uses the parent class's implementation for area and string representation,
+    It uses the parent class's implementation for area and string represe,
     since width and height are equal.
     """
 
