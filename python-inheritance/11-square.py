@@ -8,7 +8,7 @@ Rectangle = __import__('9-rectangle').Rectangle
 class Square(Rectangle):
     """A square class that inherits from Rectangle.
 
-    It overrides the string representation to show [Square] instead of [Rectangle].
+    It overrides the string repre to show [Square] instead of [Rectangle].
     """
 
     def __init__(self, size):
