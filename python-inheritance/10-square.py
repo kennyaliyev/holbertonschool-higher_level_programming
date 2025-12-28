@@ -8,8 +8,8 @@ Rectangle = __import__('9-rectangle').Rectangle
 class Square(Rectangle):
     """A square class that inherits from Rectangle.
 
-    Since a square is a rectangle with equal width and height,
-    it uses the parent class's implementation for area and string representation.
+    It uses the parent class's implementation for area and string representation,
+    since width and height are equal.
     """
 
     def __init__(self, size):
