@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module for Square class inheriting from Rectangle."""
+"""Square class inheriting from Rectangle."""
 
 
 Rectangle = __import__('9-rectangle').Rectangle
@@ -16,6 +16,7 @@ class Square(Rectangle):
 
         Args:
             size (int): The side length of the square.
+
         Raises:
             TypeError: If size is not an integer.
             ValueError: If size is not greater than 0.
@@ -28,4 +29,4 @@ class Square(Rectangle):
 
         Format: [Square] <size>/<size>
         """
-        return "[Square] {}/{}".format(self._Rectangle__width, self._Rectangle__height)
+        return f"[Square] {self._Rectangle__width}/{self._Rectangle__height}"
