@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""City class definition for SQLAlchemy ORM."""
+"""City class definition."""
 
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, ForeignKey, Integer, String
 from model_state import Base
 
 
 class City(Base):
-    """City class that links to the MySQL table 'cities'."""
+    """City class linked to 'cities' table."""
     __tablename__ = 'cities'
-    id = Column(Integer, primary_key=True, autoincrement=True, nullable=False)
+    id = Column(Integer, primary_key=True, nullable=False, autoincrement=True)
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
