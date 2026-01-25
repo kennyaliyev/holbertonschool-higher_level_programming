@@ -20,10 +20,9 @@ if __name__ == "__main__":
     )
 
     cursor = db.cursor()
-    # Use format() as required by the task
-    query = "SELECT * FROM states WHERE name = '{}' ORDER BY id ASC".format(state_name)
-    cursor.execute(query)
-    
+    query = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC"
+    cursor.execute(query.format(state_name))
+
     states = cursor.fetchall()
     for state in states:
         print(state)
