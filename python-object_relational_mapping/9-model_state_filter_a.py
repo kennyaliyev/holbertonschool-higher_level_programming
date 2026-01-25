@@ -12,7 +12,6 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database = sys.argv[3]
 
-    # Create engine and session
     engine = create_engine(
         'mysql+mysqldb://{}:{}@localhost:3306/{}'.format(
             username, password, database
@@ -23,7 +22,9 @@ if __name__ == "__main__":
     session = Session()
 
     # Query states containing 'a', ordered by id
-    states = session.query(State).filter(State.name.like('%a%')).order_by(State.id).all()
+    states = session.query(State).filter(
+        State.name.like('%a%')
+    ).order_by(State.id).all()
 
     for state in states:
         print("{}: {}".format(state.id, state.name))
